@@ -1,6 +1,6 @@
-class Solution {
+  class Solution {
 public:
-    int heightChecker(vector<int>& heights) {
+    int heightChecker(vector<int>& heights) {  
         vector<int> expected = heights;
         sort(expected.begin(), expected.end());
         
