@@ -8,7 +8,7 @@ public:
         int leftMax = 0;
         int rightMax = 0;
 
-        int water = 0;
+        int wtr = 0;
 
         while (left < right) {
 
@@ -17,16 +17,16 @@ public:
 
             if (leftMax < rightMax) {
 
-                water += leftMax - height[left];
+                wtr += leftMax - height[left];
                 left++;
 
             } else {
 
-                water += rightMax - height[right];
+                wtr += rightMax - height[right];
                 right--;
             }
         }
 
-        return water;
+        return wtr;
     }
 };
